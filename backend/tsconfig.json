@@ -1,0 +1,24 @@
+{
+    "extends": "../tsconfig.base.json",
+    "compilerOptions": {
+        "module": "nodenext",
+        "moduleResolution": "nodenext",
+        "outDir": "./dist",
+        "declarationDir": "./dist/types",
+        "paths": {
+            "@type": ["./src/type"],
+            "@type/*": ["./src/type/*"],
+            "@constants": ["./src/constants"],
+            "@constants/*": ["./src/constants/*"],
+            "@db": ["./src/db"],
+            "@db/*": ["./src/db/*"],
+            "@pipes": ["./src/pipes"],
+            "@pipes/*": ["./src/pipes/*"],
+            "@decorators": ["./src/decorators"],
+            "@decorators/*": ["./src/decorators/*"]
+        }
+    },
+    "include": [
+        "./src"
+    ]
+}

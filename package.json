@@ -1,0 +1,30 @@
+{
+    "name": "auth-example",
+    "version": "1.0.0",
+    "description": "auth example",
+    "main": "dist/main.js",
+    "scripts": {
+        "install:deps": "npm install && npm run install:deps:backend && npm run install:deps:frontend",
+        "install:deps:backend": "npm --prefix ./backend install",
+        "install:deps:frontend": "npm --prefix ./frontend install",
+        "start:backend": "npm --prefix ./backend run start",
+        "start:frontend": "npm --prefix ./frontend start",
+        "build:backend": "npm --prefix ./backend run build",
+        "build:frontend": "npm --prefix ./frontend run build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@apathoid/eslint-config": "^1.0.4",
+        "@apathoid/eslint-config-react": "^1.0.2",
+        "@types/ms": "^0.7.34",
+        "tsconfig-paths": "^4.2.0",
+        "typescript": "^5.2.2"
+    },
+    "dependencies": {
+        "class-transformer": "^0.5.1",
+        "class-validator": "^0.14.1",
+        "ms": "^2.1.3"
+    }
+}

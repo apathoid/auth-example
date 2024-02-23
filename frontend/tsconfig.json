@@ -1,0 +1,14 @@
+{
+    "extends": "../tsconfig.base.json",
+    "compilerOptions": {
+        "module": "esnext",
+        "moduleResolution": "node",
+        "jsx": "react",
+        "baseUrl": "./src",
+        "outDir": "./dist",
+        "declarationDir": "./dist/types"
+    },
+    "include": [
+        "./src"
+    ]
+}
